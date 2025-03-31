@@ -40,7 +40,7 @@ export default async function AnimePage(props: { params: Promise<{ slug: string 
     <div className="flex flex-col bg-background">
       <div
         className="w-full h-[500px] md:h-[600px] bg-cover bg-center relative"
-        style={{ backgroundImage: `url(${anime.backdrop})` }}
+        style={{ backgroundImage: `url(${API_BASE_IMG_URL}/img/posters/bg-${anime.backdrop}.webp)` }}
       >
         <div className="absolute inset-0 crunchyroll-gradient"></div>
         <div className="crunchyroll-container relative z-10 h-full flex items-end pb-16">
